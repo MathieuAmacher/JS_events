@@ -95,12 +95,46 @@
 
 // var lien = document.getElementsByTagName("link")[0];
 // var navbar = document.getElementsByClassName("navbar")[0];
+
 // console.log(lien);
 
 // navbar.addEventListener('dblclick', supprimer);
 
+
+
 //     function supprimer () {
-//         lien.href="";
+//         lien.href="";        
 //     }
 
+    
+    
+  
+// console.log(lien.collapse);
 // ********************************************************************************************
+
+
+// 6 - sur passe souris sur une view d'une card, le texte disparait, image se réduit à 20%. ET si on repasse dessus tout redevient normal.
+
+var image = document.querySelectorAll(".card-img-top")[0];
+var paragraph = document.querySelectorAll(".card-text")[0];
+var button = document.getElementsByClassName("btn-success")[0];
+
+console.log(image);
+
+button.addEventListener('mouseover', disapeare);
+
+    function disapeare () {
+        paragraph.textContent ="";
+        image.style.transform = "scale(0.2)";
+    }
+
+    // function disapeare () {
+    //     if (paragraph.textContent ="")
+    //     {
+    //     paragraph.textContent ="";
+    //     image.style.transform = "scale(0.2)";
+    //     }
+    //     else
+    //     {
+    //     image.style.transform = "scale(0.2)";
+    //     }
